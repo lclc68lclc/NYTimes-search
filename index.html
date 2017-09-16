@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NY Times Search</title>
+    <link link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <div class="container">
+                <span class="glyphicons glyphicons-newspaper"></span>
+                <h1>New York Times Search</h1>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Search Parameters</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <form action="" method="POST" role="form">
+                            <div class="form-group">
+                                <label for="search-term">Search Term:</label>
+                                <input type="text" name="" id="search-term" class="form-control" value="">
+
+                                <label for="number-records">Number of Records to Retrieve:</label>
+                                <input type="text" name="" id="number-records" class="form-control" value="">
+
+                                <label for="start-year">Start Year:</label>
+                                <input type="text" name="" id="start-year" class="form-control" value="">
+
+                                <label for="end-year">End Year:</label>
+                                <input type="text" name="" id="end-year" class="form-control" value="">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" id="search"><span class="glyphicons glyphicons-search"></span>Search</button>
+                            <button type="submit" class="btn btn-primary" id="clear">Clear Results</button>
+                        </form>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Top Articles</h3>
+                    </div>
+                    <div class="panel-body" id="search-results">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="javascript" src="script.js"></script>
+
+    </script>
+
+</body>
+
+</html>
